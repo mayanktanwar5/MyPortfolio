@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mayank Tanwar CV</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body ng-cloak ng-app="resume">
+<div ng-controller="rootCtrl" >
+    <div class="load-page">
+        <!--head section-->
+        <div class="header container-fluid">
+            <div class="col-md-6">
+                <ul class=" social-contact list-inline">
+                    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href=""><i class="fa fa-github-alt"></i></a></li>
+                    <li><a href=""><i class="fa fa-skype"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="hire">
+                    <a href="" class="btn custom-btn btn-default"><i class="fa fa-paper-plane"></i>Hire Me</a>
+                    <a href="" class="btn custom-btn btn-default"><i class="fa fa-download"></i>Download Resume</a>
+                </div>
+            </div>
+        </div>
+
+         <div class="intro container-fluid text-center">
+             <div class="profilePic">
+                 <img src="./images/profile.jpg" alt="">
+             </div>
+             <div class="name">
+                 <p>{{user.name}} Mayank Tanwar</p>
+             </div>
+             <div class="title">
+                 <p>{{user.title}} Full stack developer</p>
+             </div>
+             <div class="cover">
+                 <p>
+                    {{user.cover}}"I am a full stack web developer"
+                 </p>
+             </div>
+         </div>
+        <!--intro section ends-->
+        <!--contact-details-->
+        <div class="contact-detail">
+            <div class="container text-center">
+                <ul class="list-inline">
+                    <li><a href=""><i class="fa fa-envelope"></i>mayank.tanwar@sjsu.edu</a></li>
+                    <li><a href=""><i class="fa fa-phone"></i>+1-669-265-5136</a></li>
+                    <li><a href=""><i class="fa fa-globe"></i>xyz.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--contact-details ends-->
+    </div>
+    <!--pageLoad- ends-->
+    <!--fixed-header-->
+    <div class="nav-view">
+        <div  scroll ng-class="{fixed:boolChangeClass}" class="fixed-header  text-center ">
+            <div>
+                <ul class="list-inline nav-header">
+                    <li><a href="">Experiences</a></li>
+                    <li><a href="">Education</a></li>
+                    <li><a href="">Skills</a></li>
+                    <li><a href="">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+        <div class=" card experiences">
+            <div class="card-title text-center">
+                <h2> Work Experiences</h2>
+            </div>
+            <div id="cd-timeline" class="cd-container">
+                <div scroll-skill class="cd-timeline-block">
+                    <div  class="cd-timeline-img cd-picture">
+                        <img src="images/pin.jpg" alt="Picture">
+                    </div> <!-- cd-timeline-img -->
+                    <div    class="cd-timeline-content">
+                        <h2>Title of section 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                        <a href="#0" class="cd-read-more">Read more</a>
+                        <span class="cd-date">Jan 14</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+                <div scroll-skill class="cd-timeline-block">
+                    <div  class="cd-timeline-img cd-picture">
+                        <img src="images/pin.jpg" alt="Picture">
+                    </div> <!-- cd-timeline-img -->
+                    <div    class="cd-timeline-content">
+                        <h2>Title of section 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                        <a href="#0" class="cd-read-more">Read more</a>
+                        <span class="cd-date">Jan 14</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+                <div scroll-skill class="cd-timeline-block">
+                    <div  class="cd-timeline-img cd-picture">
+                        <img src="images/cd-icon-picture.svg" alt="Picture">
+                    </div> <!-- cd-timeline-img -->
+                    <div    class="cd-timeline-content">
+                        <h2>Title of section 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                        <a href="#0" class="cd-read-more">Read more</a>
+                        <span class="cd-date">Jan 14</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+            </div>
+        </div>
+
+
+        <section class=" card experiences">
+            <div class="card-title text-center">
+                <h2>Professional Skills</h2>
+            </div>
+            
+        </section>
+
+
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
