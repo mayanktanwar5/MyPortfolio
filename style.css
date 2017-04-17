@@ -104,7 +104,7 @@ a:hover
     height:200px;
     width:200px;
     border-radius:50%;
-    border:2px solid white;
+    border:5px solid white;
     z-index: 100;
 }
 .name
@@ -609,4 +609,23 @@ a:hover
 {
     letter-spacing: 1px;
     color:darkgray;
+}
+
+#skill1
+{
+    width: 100px;
+    height: 100px;
+}
+
+.progress {
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border:none;
+    background-color: transparent;
+}
+.progress > svg {
+    height: 100%;
+    display: block;
 }
