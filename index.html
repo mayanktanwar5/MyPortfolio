@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body ng-cloak ng-app="resume">
+<body data-spy="scroll" data-target="#nav" ng-cloak ng-app="resume">
 <div ng-controller="rootCtrl" >
     <div class="load-page">
         <!--head section-->
@@ -60,17 +60,17 @@
     <!--fixed-header-->
     <div class="nav-view">
         <div  scroll ng-class="{fixed:boolChangeClass}" class="fixed-header  text-center ">
-            <div>
+            <div id="nav">
                 <ul class="list-inline nav-header">
-                    <li><a href="">Experiences</a></li>
-                    <li><a href="">Education</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Portfolio</a></li>
+                    <li><a href="#exp">Experiences</a></li>
+                    <li><a href="#edu">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#port">Portfolio</a></li>
                 </ul>
-            </div>
+            </divid>
         </div>
     </div>
-        <div class=" card experiences">
+        <div id="exp" class=" card experiences">
             <div class="card-title text-center">
                 <h2> Work Experiences</h2>
             </div>
@@ -110,7 +110,7 @@
                 </div> <!-- cd-timeline-block -->
             </div>
         </div>
-        <section class="card">
+        <section id="skills" class="card">
             <div class="card-title text-center">
                 <h2>Professional Skills</h2>
             </div>
@@ -119,15 +119,14 @@
             </div>
         </section>
 
-    <section class="card">
+    <section id="port" class="card">
         <div class="card-title text-center">
-            <h2>Professional Skills</h2>
+            <h2>Portfolio</h2>
         </div>
-        
-      <ul class="list-inline margin-bottom text-center">
-          <li><a ng-click="filter('all')" href="" ng-class="{activeSkill:boolSkill}">ALL</a></li>
-          <li><a ng-click="filter('back')" href="" ng-class="{activeSkill:boolSkill}">BACK-END</a></li>
-          <li><a ng-click="filter('front')" href="" ng-class="{activeSkill:boolSkill}">FRONT-END</a></li>
+      <ul ng-init="filterOn=''" class="list-inline margin-list text-center">
+          <li ng-class="filterOn=='' ? 'activeSkill' :'not' "><a ng-click="filter('all')" href="" >ALL</a></li>
+          <li ng-class="filterOn=='Backend' ? 'activeSkill' :'' "><a ng-click="filter('back')" href="" >BACK-END</a></li>
+          <li ng-class="filterOn=='frontend' ? 'activeSkill': '' "> <a ng-click="filter('front')" href="" >FRONT-END</a></li>
       </ul>
 
        <div class="project-container">
@@ -150,8 +149,8 @@
             </div>
            </div>
        </div>
-
     </section>
+    <footer class="text-center"> @Copyright Mayank Tanwar Made with <i class=" red large fa fa-heart"></i> </footer>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

@@ -12,17 +12,25 @@ resume.controller('rootCtrl', function($scope,dataFetcher){
 
     $scope.filter =function (data){
 
+        $scope.filterOn= '';
         console.log("I am clicked");
         if(data==='all')
         {
             console.log("I am clicked");
             $scope.filterOn= '';
+            $scope.allClass='activeSkill';
         } else if(data=='back')
         {
             $scope.filterOn= 'Backend';
+            $scope.backClass='activeSkill';
+            $scope.allClass='';
+            $scope.frontClass='';
         } else if(data=='front')
         {
             $scope.filterOn= 'frontend';
+            $scope.backClass='';
+            $scope.allClass='';
+            $scope.frontClass='activeSkill';
         }
 
     };

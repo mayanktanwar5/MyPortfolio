@@ -631,20 +631,19 @@ a:hover
 }
 .project-container
 {
-    width:85%;
+    width:95%;
     margin: 0 auto;
     margin-bottom:  20px ;
-    padding-top:50px;
+    padding-top:30px;
     display: block;
     overflow: hidden;
 }
-
 .card-project
 {
-
     height:300px;
     border-radius: 2px;
     background-color: #20b2aa;
+    margin-bottom: 20px;
 }
 .img-container
 {
@@ -665,34 +664,30 @@ a:hover
 {
     padding-top: 30px;
 }
-.project
-{
-    /*position: absolute;*/
-}
+
 .filter-animate.ng-enter
 {
+    transition:0.5s linear all;
     opacity: 0;
-    /*animation:scaleOut 0.5s linear  ;*/
+    animation:scaleOut 0.5s linear  ;
 }
 
 .filter-animate.ng-enter.ng-enter-active
 {
+
     opacity: 1;
-    /*animation:scaleIn 0.5s linear ;*/
+    animation:scaleIn 0.5s linear ;
 }
-.filter-animate.ng-animate
-{
-    transition:0.5s linear all;
-}
+
 .filter-animate.ng-leave
 {
     opacity: 0;
-    /*animation:scaleOut 0.5s linear ;*/
+    animation:scaleOut 0.1 linear ;
 }
 .filter-animate.ng-leave-active
 {
     opacity: 1;
-    /*animation:scaleIn 0.5s linear  ;*/
+    animation:scaleIn 0.1 linear  ;
 }
 
 @keyframes scaleOut {
@@ -706,4 +701,40 @@ a:hover
     0% {transform:scale(0.4,0.4)}
     50% {transform:scale(0.7,0.7)}
     100% {transform:scale(1,1)}
+}
+
+.margin-list {
+
+    margin-top: 20px;
+    border-bottom:1px solid slategrey;
+    color:darkgray;
+}
+
+.margin-list li{
+
+    padding: 5px;
+}
+.margin-list a
+{
+    color:lightslategray;
+}
+
+.activeSkill
+{
+    color: #238982;
+    border-bottom: 2px solid #238982;
+}
+.activeSkill a
+{
+    color: #238982;
+    text-decoration: none;
+}
+.red
+{
+    color:darkred;
+}
+
+footer
+{
+    padding: 10px;
 }
