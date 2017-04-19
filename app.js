@@ -1,19 +1,31 @@
 /**
  * Created by Mak on 4/16/17.
  */
+var resume =angular.module('resume',['ngAnimate']);
 
-
-
-
-
-var resume =angular.module('resume',[]);
-
-resume.controller('rootCtrl', function($scope){
-
+resume.controller('rootCtrl', function($scope,dataFetcher){
     $scope.test="hello";
+    dataFetcher.getData('data.json').success(function(data){
+        console.log(data);
+        $scope.projects= data.projects;
+    });
 
+    $scope.filter =function (data){
 
+        console.log("I am clicked");
+        if(data==='all')
+        {
+            console.log("I am clicked");
+            $scope.filterOn= '';
+        } else if(data=='back')
+        {
+            $scope.filterOn= 'Backend';
+        } else if(data=='front')
+        {
+            $scope.filterOn= 'frontend';
+        }
 
+    };
 });
 
 resume.directive('scroll',function ($window) {
@@ -32,7 +44,6 @@ resume.directive('scroll',function ($window) {
             }
             scope.$apply();
         });
-
     }
 });
 

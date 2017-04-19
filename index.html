@@ -70,7 +70,6 @@
             </div>
         </div>
     </div>
-
         <div class=" card experiences">
             <div class="card-title text-center">
                 <h2> Work Experiences</h2>
@@ -111,8 +110,6 @@
                 </div> <!-- cd-timeline-block -->
             </div>
         </div>
-
-
         <section class="card">
             <div class="card-title text-center">
                 <h2>Professional Skills</h2>
@@ -122,14 +119,49 @@
             </div>
         </section>
 
+    <section class="card">
+        <div class="card-title text-center">
+            <h2>Professional Skills</h2>
+        </div>
+        
+      <ul class="list-inline margin-bottom text-center">
+          <li><a ng-click="filter('all')" href="" ng-class="{activeSkill:boolSkill}">ALL</a></li>
+          <li><a ng-click="filter('back')" href="" ng-class="{activeSkill:boolSkill}">BACK-END</a></li>
+          <li><a ng-click="filter('front')" href="" ng-class="{activeSkill:boolSkill}">FRONT-END</a></li>
+      </ul>
 
+       <div class="project-container">
+           <div ng-repeat="project in projects | filter: filterOn"  class="filter-animate project col-md-3">
+            <div class="card-project  ">
+               <div class="img-container">
+                   <img src="images/profile.jpg" alt="">
+               </div>
+               <div class="project-content text-center">
+                   <div class="project-title">
+                       <p>{{project.title}}</p>
+                   </div>
+                   <div class="project-tech">
+                        <p>{{project.skill}}</p>
+                   </div>
+                   <div class="view-options">
+                        <a ng-href="{{project.gitHubLink}}" class="btn custom-btn">Github</a>
+                   </div>
+               </div>
+            </div>
+           </div>
+       </div>
+
+    </section>
 </div>
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular-animate.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 <script src="./vendor/progressbar.js"></script>
+
 <script src="app.js"></script>
+<script src="Services/dataFetecher.js"></script>
 </body>
 </html>
