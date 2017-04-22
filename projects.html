@@ -12,13 +12,17 @@
                 </div>
                 <div class="project-content text-center">
                     <div class="project-title">
-                        <p>{{project.title}}</p>
+                        <span>{{project.title}}</span>
                     </div>
                     <div class="project-tech">
-                        <p>{{project.skill}}</p>
+                        <span>{{project.skill}}</span>
                     </div>
                     <div class="view-options">
-                        <a ng-href="{{project.gitHubLink}}" class="btn custom-btn">Github</a>
+                        <ul class="list-inline">
+                            <li><a ng-href="{{project.gitHubLink}}" class="btn project-btn">Github</a></li>
+                            <li><a ng-href="{{project.gitHubLink}}" class="btn project-btn">Show </a></li>
+                        </ul>
+
                     </div>
                 </div>
             </div>

@@ -40,32 +40,7 @@
         <div class="card-title text-center">
             <h2>Portfolio</h2>
         </div>
-        <mt-skill-progress skills="user.skills"></mt-skill-progress>
-      <!--<ul ng-init="filterOn=''" class="list-inline margin-list text-center">-->
-          <!--<li ng-class="filterOn=='' ? 'activeSkill' :'not' "><a ng-click="filter('all')" href="" >ALL</a></li>-->
-          <!--<li ng-class="filterOn=='Backend' ? 'activeSkill' :'' "><a ng-click="filter('back')" href="" >BACK-END</a></li>-->
-          <!--<li ng-class="filterOn=='frontend' ? 'activeSkill': '' "> <a ng-click="filter('front')" href="" >FRONT-END</a></li>-->
-      <!--</ul>-->
-       <!--<div class="project-container">-->
-           <!--<div ng-repeat="project in projects | filter: filterOn"  class="filter-animate project col-md-3">-->
-            <!--<div class="card-project  ">-->
-               <!--<div class="img-container">-->
-                   <!--<img src="images/profile.jpg" alt="">-->
-               <!--</div>-->
-               <!--<div class="project-content text-center">-->
-                   <!--<div class="project-title">-->
-                       <!--<p>{{project.title}}</p>-->
-                   <!--</div>-->
-                   <!--<div class="project-tech">-->
-                        <!--<p>{{project.skill}}</p>-->
-                   <!--</div>-->
-                   <!--<div class="view-options">-->
-                        <!--<a ng-href="{{project.gitHubLink}}" class="btn custom-btn">Github</a>-->
-                   <!--</div>-->
-               <!--</div>-->
-            <!--</div>-->
-           <!--</div>-->
-       <!--</div>-->
+        <mt-project-show projects="user.projects"></mt-project-show>
     </section>
     <footer class="text-center"> @Copyright Mayank Tanwar Made with <i class=" red large fa fa-heart"></i> </footer>
 </div>

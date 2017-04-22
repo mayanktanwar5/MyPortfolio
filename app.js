@@ -16,30 +16,7 @@ resume.controller('rootCtrl', function($scope,dataFetcher,$document){
         $scope.user = data;
     });
 
-    $scope.filter =function (data){
 
-        $scope.filterOn= '';
-        console.log("I am clicked");
-        if(data==='all')
-        {
-            console.log("I am clicked");
-            $scope.filterOn= '';
-            $scope.allClass='activeSkill';
-        } else if(data=='back')
-        {
-            $scope.filterOn= 'Backend';
-            $scope.backClass='activeSkill';
-            $scope.allClass='';
-            $scope.frontClass='';
-        } else if(data=='front')
-        {
-            $scope.filterOn= 'frontend';
-            $scope.backClass='';
-            $scope.allClass='';
-            $scope.frontClass='activeSkill';
-        }
-
-    };
     
     $scope.goToTop = function () {
 
@@ -99,9 +76,7 @@ resume.directive('scrollSkill',function ($window) {
 resume.directive('scrollProgress',function ($window) {
 
     return {
-        // scope:{
-        //     skills:"="
-        // },
+
         link:function(scope, element, attrs)
         {
             angular.element($window).bind("scroll", function(){
@@ -236,6 +211,45 @@ resume.directive('mtSkillShow', function(){
         templateUrl:'skills.html',
         scope:{
             skills:"="
+        }
+    }
+});
+
+resume.directive('mtProjectShow', function(){
+
+    return {
+        restrict :'E',
+        templateUrl:'projects.html',
+        scope:{
+            projects:"="
+        },
+        controller: function ($scope) {
+
+            $scope.filter =function (data){
+
+                $scope.filterOn= '';
+                console.log("I am clicked");
+                if(data==='all')
+                {
+                    console.log("I am clicked");
+                    $scope.filterOn= '';
+                    $scope.allClass='activeSkill';
+                } else if(data=='back')
+                {
+                    $scope.filterOn= 'Backend';
+                    $scope.backClass='activeSkill';
+                    $scope.allClass='';
+                    $scope.frontClass='';
+                } else if(data=='front')
+                {
+                    $scope.filterOn= 'frontend';
+                    $scope.backClass='';
+                    $scope.allClass='';
+                    $scope.frontClass='activeSkill';
+                }
+
+            };
+
         }
     }
 });
