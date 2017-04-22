@@ -94,15 +94,15 @@ resume.directive('scrollProgress',function ($window) {
                                 color: '#aaa',
                                 // This has to be the same size as the maximum width to
                                 // prevent clipping
-                                strokeWidth: 5,
-                                trailWidth: 1,
+                                strokeWidth: 8,
+                                trailWidth: 5,
                                 easing: 'easeInOut',
                                 duration: 1400,
                                 text: {
                                     autoStyleContainer: false
                                 },
-                                from: { color: '#20b2aa', width: 1 },
-                                to: { color: '#238982', width: 4 },
+                                from: { color: '#20b2aa', width: 3 },
+                                to: { color: '#68c3a3;', width: 5 },
                                 // Set default step function for all animate calls
                                 step: function(state, circle) {
                                     circle.path.setAttribute('stroke', state.color);

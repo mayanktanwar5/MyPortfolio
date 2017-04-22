@@ -14,7 +14,7 @@ body {
  }
 
 .header{
-    background-color: lightseagreen;
+    background: rgba(32, 178, 170,0.3);
     color:white;
     height:180px;
 }
@@ -88,7 +88,7 @@ a:hover
 
     height:400px;
     /*background-color: rgb(30, 140, 132);*/
-    background-color: rgb(41, 158, 150);
+    background: rgba(41, 158, 150,0.6);
     color:white;
     padding-top: 100px;
 }
@@ -141,7 +141,7 @@ a:hover
 .contact-detail
 {
     padding: 15px;
-    background-color: rgb(30, 140, 132);
+    background: rgba(30, 140, 132,0.8);
     height: 70px;
 }
 .contact-detail ul
@@ -163,14 +163,14 @@ a:hover
 }
 .nav-view
 {
-    height:60px;
+    height:50px;
     position: relative;
 }
 .fixed-header
 {
     height:50px;
     line-height: 50px;
-    background-color: rgb(27, 124, 116);
+    background: rgba(27, 124, 116,0.6);
     width:100%;
 }
 
@@ -187,10 +187,10 @@ a:hover
 
 .card
 {
-    width:85%;
+    width:90%;
     margin: 0 auto;
-    box-shadow: 0 3px 5px 0 grey;
-    background-color: gainsboro;
+    /*box-shadow: 0 3px 5px 0 #20b2aa;*/
+    background: rgba(0, 0, 0,0.6);
     border-radius: 2px;
     margin-top: 50px;
     position: relative;
@@ -628,7 +628,7 @@ a:hover
 .card-title
 {
     letter-spacing: 1px;
-    color:darkgray;
+    color:white;
 }
 
 #skill1
@@ -637,16 +637,16 @@ a:hover
     height: 100px;
 }
 
-.progress {
+.progressSet {
     margin: 0 auto;
     width: 150px;
     height: 150px;
     position: relative;
     border:0;
-    background-color: white;
+
 
 }
-.progress > svg {
+.progressSet > svg {
     height: 100%;
     display: block;
 }
@@ -898,10 +898,7 @@ a.active {
 
 .skill-container
 {
-  background-color: white;
     padding: 15px;
-    border-radius:2px ;
-    box-shadow: 0 3px 5px 0 grey;
 }
 
 .skill-btn
@@ -916,8 +913,41 @@ a.active {
     font-size: 16px;
     background-color: white;
     color:grey;
+}
 
+.load-page
+{
+    background: url("images/turntable.jpg")  no-repeat center;
+    background-size:cover ;
+    background-attachment:fixed ;
+
+}
+
+#exp
+{
+    background: url("images/phone.jpg")  no-repeat center;
+    background-size:cover ;
+    background-attachment:fixed ;
+
+    padding: 10px;
+}
+
+#skills
+{
+    background: url("images/pencil.jpg")  no-repeat center;
+    background-size:cover ;
+    background-attachment:fixed ;
+    /*background-color: #1a1e23;;*/
+    padding: 10px;
+    color:white;
 }
 
 
 
+#port
+{
+    background: url("images/hands.jpg")  no-repeat center;
+    background-size:cover ;
+    background-attachment:fixed ;
+    padding: 10px;
+}

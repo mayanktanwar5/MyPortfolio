@@ -18,29 +18,32 @@
     <div scroll ng-class="{ opacity:boolChangeClass}" ng-click="goToTop()" class="topScroll" >
         <i   class="fa fa-angle-up"></i>
     </div><!--scroll top ends-->
-
-    <section id="exp" class=" card experiences">
-        <div class="card-title text-center">
-            <h2> Work Experiences</h2>
+    <section id="exp" class="  experiences">
+        <div class="card">
+            <div class="card-title text-center">
+                <h2> Work Experiences</h2>
+            </div>
+            <mt-exp-scroll experiences="user.experiences"></mt-exp-scroll>
         </div>
-        <mt-exp-scroll experiences="user.experiences"></mt-exp-scroll>
     </section>
-    <section id="skills" class="card">
-        <div class="card-title text-center">
-            <h2>Professional Skills</h2>
+    <section id="skills" >
+        <div class="card">
+            <div class="card-title text-center">
+                <h2>Professional Skills</h2>
+            </div>
+            <div class="sub-skill text-center col-md-12">
+                <h4> Top Skill </h4>
+            </div>
+            <mt-skill-show skills="user.skills"></mt-skill-show>
         </div>
-        <div class="sub-skill text-center col-md-12">
-            <h4> Top Skill </h4>
-        </div>
-        <mt-skill-show skills="user.skills"></mt-skill-show>
-
     </section>
-
-    <section id="port" class="card">
-        <div class="card-title text-center">
-            <h2>Portfolio</h2>
+    <section id="port" >
+        <div class="card">
+            <div class="card-title text-center">
+                <h2>Portfolio</h2>
+            </div>
+            <mt-project-show projects="user.projects"></mt-project-show>
         </div>
-        <mt-project-show projects="user.projects"></mt-project-show>
     </section>
     <footer class="text-center"> @Copyright Mayank Tanwar Made with <i class=" red large fa fa-heart"></i> </footer>
 </div>
@@ -49,11 +52,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular-animate.js"></script>
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 <script src="./vendor/progressbar.js"></script>
 <script src="./vendor/angular-scroll.min.js"></script>
-
-
 <script src="app.js"></script>
 <script src="Services/dataFetecher.js"></script>
 </body>
