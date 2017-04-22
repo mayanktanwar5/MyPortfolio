@@ -1,0 +1,14 @@
+<div scroll-progress >
+    <div ng-repeat="skill in skills.primary"  class="  text-center col-md-4">
+        <div class="skill-container">
+            <div class="progress"  id="progress{{$index}}"></div>
+            <div class="skill-name">{{skill.name}}</div>
+            <div class="skill-proficient">{{skill.proficient}}</div>
+        </div>
+    </div>
+    <div class="sub-skill text-center col-md-12">
+        <h4> Other Skill </h4>
+        <br>
+        <div class="skill-btn " ng-repeat="skill in skills.others track by $index">{{skill}}</div>
+    </div>
+</div>

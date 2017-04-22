@@ -7,148 +7,65 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body data-spy="scroll" data-target="#nav" ng-cloak ng-app="resume">
+<body  ng-cloak ng-app="resume">
 <div ng-controller="rootCtrl" >
     <div class="load-page">
-        <!--head section-->
-        <div class="header container-fluid">
-            <div class="col-md-6">
-                <ul class=" social-contact list-inline">
-                    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href=""><i class="fa fa-github-alt"></i></a></li>
-                    <li><a href=""><i class="fa fa-skype"></i></a></li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <div class="hire">
-                    <a href="" class="btn custom-btn btn-default"><i class="fa fa-paper-plane"></i>Hire Me</a>
-                    <a href="" class="btn custom-btn btn-default"><i class="fa fa-download"></i>Download Resume</a>
-                </div>
-            </div>
-        </div>
+        <mt-social-header></mt-social-header>
+        <mt-intro-section details="user.basicInfo"></mt-intro-section>
+        <mt-contact-details details="user.contactInfo"></mt-contact-details>
+    </div><!--pageLoad- ends-->
+    <mt-nav-header></mt-nav-header><!--fixed-header ends-->
+    <div scroll ng-class="{ opacity:boolChangeClass}" ng-click="goToTop()" class="topScroll" >
+        <i   class="fa fa-angle-up"></i>
+    </div><!--scroll top ends-->
 
-         <div class="intro container-fluid text-center">
-             <div class="profilePic">
-                 <img src="./images/profile.jpg" alt="">
-             </div>
-             <div class="name">
-                 <p>{{user.name}} Mayank Tanwar</p>
-             </div>
-             <div class="title">
-                 <p>{{user.title}} Full stack developer</p>
-             </div>
-             <div class="cover">
-                 <p>
-                    {{user.cover}}"I am a full stack web developer"
-                 </p>
-             </div>
-         </div>
-        <!--intro section ends-->
-        <!--contact-details-->
-        <div class="contact-detail">
-            <div class="container text-center">
-                <ul class="list-inline">
-                    <li><a href=""><i class="fa fa-envelope"></i>mayank.tanwar@sjsu.edu</a></li>
-                    <li><a href=""><i class="fa fa-phone"></i>+1-669-265-5136</a></li>
-                    <li><a href=""><i class="fa fa-globe"></i>xyz.com</a></li>
-                </ul>
-            </div>
+    <section id="exp" class=" card experiences">
+        <div class="card-title text-center">
+            <h2> Work Experiences</h2>
         </div>
-        <!--contact-details ends-->
-    </div>
-    <!--pageLoad- ends-->
-    <!--fixed-header-->
-    <div class="nav-view">
-        <div  scroll ng-class="{fixed:boolChangeClass}" class="fixed-header  text-center ">
-            <div id="nav">
-                <ul class="list-inline nav-header">
-                    <li><a href="#exp">Experiences</a></li>
-                    <li><a href="#edu">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#port">Portfolio</a></li>
-                </ul>
-            </divid>
+        <mt-exp-scroll experiences="user.experiences"></mt-exp-scroll>
+    </section>
+    <section id="skills" class="card">
+        <div class="card-title text-center">
+            <h2>Professional Skills</h2>
         </div>
-    </div>
-        <div id="exp" class=" card experiences">
-            <div class="card-title text-center">
-                <h2> Work Experiences</h2>
-            </div>
-            <div id="cd-timeline" class="cd-container">
-                <div scroll-skill class="cd-timeline-block">
-                    <div  class="cd-timeline-img cd-picture">
-                        <img src="images/pin.jpg" alt="Picture">
-                    </div> <!-- cd-timeline-img -->
-                    <div    class="cd-timeline-content">
-                        <h2>Title of section 1</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                        <a href="#0" class="cd-read-more">Read more</a>
-                        <span class="cd-date">Jan 14</span>
-                    </div> <!-- cd-timeline-content -->
-                </div> <!-- cd-timeline-block -->
-                <div scroll-skill class="cd-timeline-block">
-                    <div  class="cd-timeline-img cd-picture">
-                        <img src="images/pin.jpg" alt="Picture">
-                    </div> <!-- cd-timeline-img -->
-                    <div    class="cd-timeline-content">
-                        <h2>Title of section 1</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                        <a href="#0" class="cd-read-more">Read more</a>
-                        <span class="cd-date">Jan 14</span>
-                    </div> <!-- cd-timeline-content -->
-                </div> <!-- cd-timeline-block -->
-                <div scroll-skill class="cd-timeline-block">
-                    <div  class="cd-timeline-img cd-picture">
-                        <img src="images/cd-icon-picture.svg" alt="Picture">
-                    </div> <!-- cd-timeline-img -->
-                    <div    class="cd-timeline-content">
-                        <h2>Title of section 1</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                        <a href="#0" class="cd-read-more">Read more</a>
-                        <span class="cd-date">Jan 14</span>
-                    </div> <!-- cd-timeline-content -->
-                </div> <!-- cd-timeline-block -->
-            </div>
+        <div class="sub-skill text-center col-md-12">
+            <h4> Top Skill </h4>
         </div>
-        <section id="skills" class="card">
-            <div class="card-title text-center">
-                <h2>Professional Skills</h2>
-            </div>
-            <div scroll-progress class="skill-container">
-                <div class="progress" id="progress"></div>
-            </div>
-        </section>
+        <mt-skill-show skills="user.skills"></mt-skill-show>
+
+    </section>
 
     <section id="port" class="card">
         <div class="card-title text-center">
             <h2>Portfolio</h2>
         </div>
-      <ul ng-init="filterOn=''" class="list-inline margin-list text-center">
-          <li ng-class="filterOn=='' ? 'activeSkill' :'not' "><a ng-click="filter('all')" href="" >ALL</a></li>
-          <li ng-class="filterOn=='Backend' ? 'activeSkill' :'' "><a ng-click="filter('back')" href="" >BACK-END</a></li>
-          <li ng-class="filterOn=='frontend' ? 'activeSkill': '' "> <a ng-click="filter('front')" href="" >FRONT-END</a></li>
-      </ul>
-
-       <div class="project-container">
-           <div ng-repeat="project in projects | filter: filterOn"  class="filter-animate project col-md-3">
-            <div class="card-project  ">
-               <div class="img-container">
-                   <img src="images/profile.jpg" alt="">
-               </div>
-               <div class="project-content text-center">
-                   <div class="project-title">
-                       <p>{{project.title}}</p>
-                   </div>
-                   <div class="project-tech">
-                        <p>{{project.skill}}</p>
-                   </div>
-                   <div class="view-options">
-                        <a ng-href="{{project.gitHubLink}}" class="btn custom-btn">Github</a>
-                   </div>
-               </div>
-            </div>
-           </div>
-       </div>
+        <mt-skill-progress skills="user.skills"></mt-skill-progress>
+      <!--<ul ng-init="filterOn=''" class="list-inline margin-list text-center">-->
+          <!--<li ng-class="filterOn=='' ? 'activeSkill' :'not' "><a ng-click="filter('all')" href="" >ALL</a></li>-->
+          <!--<li ng-class="filterOn=='Backend' ? 'activeSkill' :'' "><a ng-click="filter('back')" href="" >BACK-END</a></li>-->
+          <!--<li ng-class="filterOn=='frontend' ? 'activeSkill': '' "> <a ng-click="filter('front')" href="" >FRONT-END</a></li>-->
+      <!--</ul>-->
+       <!--<div class="project-container">-->
+           <!--<div ng-repeat="project in projects | filter: filterOn"  class="filter-animate project col-md-3">-->
+            <!--<div class="card-project  ">-->
+               <!--<div class="img-container">-->
+                   <!--<img src="images/profile.jpg" alt="">-->
+               <!--</div>-->
+               <!--<div class="project-content text-center">-->
+                   <!--<div class="project-title">-->
+                       <!--<p>{{project.title}}</p>-->
+                   <!--</div>-->
+                   <!--<div class="project-tech">-->
+                        <!--<p>{{project.skill}}</p>-->
+                   <!--</div>-->
+                   <!--<div class="view-options">-->
+                        <!--<a ng-href="{{project.gitHubLink}}" class="btn custom-btn">Github</a>-->
+                   <!--</div>-->
+               <!--</div>-->
+            <!--</div>-->
+           <!--</div>-->
+       <!--</div>-->
     </section>
     <footer class="text-center"> @Copyright Mayank Tanwar Made with <i class=" red large fa fa-heart"></i> </footer>
 </div>
@@ -159,6 +76,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular-animate.js"></script>
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 <script src="./vendor/progressbar.js"></script>
+<script src="./vendor/angular-scroll.min.js"></script>
+
 
 <script src="app.js"></script>
 <script src="Services/dataFetecher.js"></script>

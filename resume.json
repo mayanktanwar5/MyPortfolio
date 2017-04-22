@@ -1,0 +1,38 @@
+{
+  "basicInfo":{
+
+    "name":"Mayank Tanwar",
+    "jobTitle":"Full Stack Web developer",
+    "jobDesc":"I am full stack web developer"
+  },
+  "contactInfo" :{
+    "email":"mayank.tanwar@sjsu.edu",
+    "mobile":"+1-669-265-5136",
+    "portfolio":"xyz.com"
+  },
+  "experiences" :[
+
+    {"companyName":"Cognizant Technology Solutions",
+      "jobDesc":[
+        "EAGLE STAR/PACE developer, was responsible for developing various business applications for Clients (Java, EAGLE investment System, Oracle 10g).",
+        "Developed message center streams, exporters and uploaders using EAGLE STAR and PACE.",
+        "Developed cognizant internal oneCognizant portal for employee management (Java, AngularJS, JavaScript)"
+      ],
+      "jobLocation":"Bangalore, India",
+      "jobTitle" :"Product Specialist",
+      "jobDuration" :" Jan 2012 - June 2016",
+      "image":"images/cts.png"
+    },
+    {"companyName":"eCampus San Jose State Univeristy",
+      "jobDesc":[
+        "Canvas support to professor"
+      ],
+      "jobLocation":"San Jose, California",
+      "jobTitle" :"Student Assistant",
+      "jobDuration" :" Feb 2017 - Present",
+      "image":"images/sjsu.png"
+    }
+  ],
+  "skills":{"primary":[{"name":"JavaScript","proficient":"Advance , 4 Years","perc":"70"},{"name":"Java","proficient":"25","perc":"80"}],
+    "others":["HTML5","BOOTSTRAP","HTML5","BOOTSTRAP","HTML5","BOOTSTRAP","HTML5","BOOTSTRAP","HTML5","BOOTSTRAP","HTML5","BOOTSTRAP"]}
+}

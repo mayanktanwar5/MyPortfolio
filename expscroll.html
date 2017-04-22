@@ -1,0 +1,18 @@
+<div id="cd-timeline" class="cd-container">
+    <div scroll-skill ng-repeat=" exp in experiences " class="cd-timeline-block">
+        <div  class="cd-timeline-img cd-picture">
+            <img ng-src="{{exp.image}}" alt="Picture">
+        </div> <!-- cd-timeline-img -->
+        <div    class="cd-timeline-content">
+            <h2 class="color-resume float-left">{{exp.companyName}}</h2>
+                  <span class="location-marker"><i class="fa fa-map-marker"></i>{{exp.jobLocation}}</span>
+                <h2 class="color-resume float-right">{{exp.location}}</h2>
+            <h2>{{exp.jobTitle}}</h2>
+            <ul class="jobDesc">
+                <li ng-repeat="desc in exp.jobDesc" >{{desc}}</li>
+            </ul>
+            <!--<a href="#0" class="cd-read-more">Read more</a>-->
+            <span class="cd-date">{{exp.jobDuration}}</span>
+        </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+</div>
