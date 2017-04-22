@@ -80,5 +80,11 @@
 "skill":"Javascript",
 "gitHubLink" :"https://github.com/mayanktanwar5",
 "focus":"frontend"
-}]
+}],
+"services":{"status":"Abara ka dabra Abara ka dabra Abara ka dabra Abara ka dabra",
+            "current":["Do this do this do this","do that do that do that"]
+            },
+ "education":[{"degree":"Masters, Computer Software Engineering","institute":"San Jose State University",
+   "duration":"August 2016 - May 2018","desc":"Helo asdasdasdsadsadsadsadsadsasad"},{"degree":"Masters, Computer Software Engineering","institute":"San Jose State University",
+   "duration":"August 2016 - May 2018","desc":"Helo asdasdasdsadsadsadsadsadsasad"}]
 }

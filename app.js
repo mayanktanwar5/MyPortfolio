@@ -3,7 +3,7 @@
  */
 var resume =angular.module('resume',['ngAnimate','duScroll']);
 
-resume.value('duScrollOffset',65);
+resume.value('duScrollOffset',50);
 resume.controller('rootCtrl', function($scope,dataFetcher,$document){
     $scope.test="hello";
     dataFetcher.getData('data.json').success(function(data){

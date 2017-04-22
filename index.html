@@ -18,6 +18,22 @@
     <div scroll ng-class="{ opacity:boolChangeClass}" ng-click="goToTop()" class="topScroll" >
         <i   class="fa fa-angle-up"></i>
     </div><!--scroll top ends-->
+    <section id="edu" class="  experiences" >
+        <div class="card">
+            <div class="card-title text-center">
+                <h2>Education</h2>
+            </div>
+            <div class="edu-card col-md-4  " ng-repeat="edu in user.education" >
+                <div class="edu-inner">
+                    <div class="degree"> <h3>{{edu.degree}}</h3></div>
+                    <div class="institute"> {{edu.institute}}</div>
+                    <div class="edu-duration">{{edu.duration}}</div>
+                    <div class="edu-desc">{{edu.desc}}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="exp" class="  experiences">
         <div class="card">
             <div class="card-title text-center">
@@ -43,6 +59,24 @@
                 <h2>Portfolio</h2>
             </div>
             <mt-project-show projects="user.projects"></mt-project-show>
+        </div>
+    </section>
+    <section id="connect" >
+        <div class="card">
+            <div class="card-title text-center">
+                <h2>GET IN TOUCH</h2>
+            </div>
+            <div class="services">
+                <div class="current-status">
+                    {{user.services.status}}
+                </div>
+                <div class="current-services">
+                    <ul>
+                        <li ng-repeat="service in user.services.current track by $index"><i class="fa resume-color fa-check"></i>{{service}}</li>
+                    </ul>
+                </div>
+                <div class="drop-note">Drop me a line at <span class="resume-color">{{user.contactInfo.email}}</span> or call me at <span class="resume-color">{{user.contactInfo.mobile}}</span></div>
+            </div>
         </div>
     </section>
     <footer class="text-center"> @Copyright Mayank Tanwar Made with <i class=" red large fa fa-heart"></i> </footer>
