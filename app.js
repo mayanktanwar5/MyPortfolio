@@ -1,7 +1,7 @@
 /**
  * Created by Mak on 4/16/17.
  */
-var resume =angular.module('resume',['ngAnimate','duScroll']);
+var resume =angular.module('resume',['ngAnimate','duScroll','ui.bootstrap']);
 
 resume.value('duScrollOffset',50);
 resume.controller('rootCtrl', function($scope,dataFetcher,$document){
@@ -224,6 +224,10 @@ resume.directive('mtProjectShow', function(){
             projects:"="
         },
         controller: function ($scope) {
+
+            $scope.myInterval = 5000;
+            $scope.noWrapSlides = false;
+            $scope.active = 0;
 
             $scope.filter =function (data){
 

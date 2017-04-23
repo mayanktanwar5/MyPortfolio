@@ -911,12 +911,13 @@ a.active {
     padding: 6px 30px;
     display: inline-block;
     margin-right: 10px;
-    border: 2px solid #f5f5f5;
+    border: 2px solid #68c3a3;
     font-weight: 500;
     margin-bottom: 15px;
     font-size: 16px;
-    background-color: white;
-    color:grey;
+    background-color: #68c3a3;
+    color:white;
+    letter-spacing: 1px ;
 }
 
 .load-page
@@ -1040,5 +1041,16 @@ color:#68c3a3;
 .edu-desc
 {
     color: #666;
+}
+
+.img-container div
+{
+    width: inherit;
+    height: inherit;
+}
+
+.project-modal.modal-dialog
+{
+    width:85%;
 }
 
