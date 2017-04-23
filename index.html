@@ -5,6 +5,7 @@
     <title>Mayank Tanwar CV</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body  ng-cloak ng-app="resume">
@@ -18,67 +19,70 @@
     <div scroll ng-class="{ opacity:boolChangeClass}" ng-click="goToTop()" class="topScroll" >
         <i   class="fa fa-angle-up"></i>
     </div><!--scroll top ends-->
-    <section id="edu" class="  experiences" >
-        <div class="card">
-            <div class="card-title text-center">
-                <h2>Education</h2>
-            </div>
-            <div class="edu-card col-md-4  " ng-repeat="edu in user.education" >
-                <div class="edu-inner">
-                    <div class="degree"> <h3>{{edu.degree}}</h3></div>
-                    <div class="institute"> {{edu.institute}}</div>
-                    <div class="edu-duration">{{edu.duration}}</div>
-                    <div class="edu-desc">{{edu.desc}}</div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="exp" class="  experiences">
-        <div class="card">
-            <div class="card-title text-center">
-                <h2> Work Experiences</h2>
-            </div>
-            <mt-exp-scroll experiences="user.experiences"></mt-exp-scroll>
-        </div>
-    </section>
-    <section id="skills" >
-        <div class="card">
-            <div class="card-title text-center">
-                <h2>Professional Skills</h2>
-            </div>
-            <div class="sub-skill text-center col-md-12">
-                <h4> Top Skill </h4>
-            </div>
-            <mt-skill-show skills="user.skills"></mt-skill-show>
-        </div>
-    </section>
-    <section id="port" >
-        <div class="card">
-            <div class="card-title text-center">
-                <h2>Portfolio</h2>
-            </div>
-            <mt-project-show projects="user.projects"></mt-project-show>
-        </div>
-    </section>
-    <section id="connect" >
-        <div class="card">
-            <div class="card-title text-center">
-                <h2>GET IN TOUCH</h2>
-            </div>
-            <div class="services">
-                <div class="current-status">
-                    {{user.services.status}}
+
+    <div class="wrapper container">
+        <section id="edu" class="  experiences" >
+            <div class="card">
+                <div class="card-title text-center">
+                    <h2>Education</h2>
                 </div>
-                <div class="current-services">
-                    <ul>
-                        <li ng-repeat="service in user.services.current track by $index"><i class="fa resume-color fa-check"></i>{{service}}</li>
-                    </ul>
+                <div class="edu-card col-md-4 col-xs-12  " ng-repeat="edu in user.education" >
+                    <div class="edu-inner">
+                        <div class="degree"> <h3>{{edu.degree}}</h3></div>
+                        <div class="institute"> {{edu.institute}}</div>
+                        <div class="edu-duration">{{edu.duration}}</div>
+                        <div class="edu-desc">{{edu.desc}}</div>
+                    </div>
                 </div>
-                <div class="drop-note">Drop me a line at <span class="resume-color">{{user.contactInfo.email}}</span> or call me at <span class="resume-color">{{user.contactInfo.mobile}}</span></div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section id="exp" class="  experiences">
+            <div class="card">
+                <div class="card-title text-center">
+                    <h2> Work Experiences</h2>
+                </div>
+                <mt-exp-scroll experiences="user.experiences"></mt-exp-scroll>
+            </div>
+        </section>
+        <section id="skills" >
+            <div class="card">
+                <div class="card-title text-center">
+                    <h2>Professional Skills</h2>
+                </div>
+                <div class="sub-skill text-center col-md-12">
+                    <h4> Top Skill </h4>
+                </div>
+                <mt-skill-show skills="user.skills"></mt-skill-show>
+            </div>
+        </section>
+        <section id="port" >
+            <div class="card">
+                <div class="card-title text-center">
+                    <h2>Portfolio</h2>
+                </div>
+                <mt-project-show projects="user.projects"></mt-project-show>
+            </div>
+        </section>
+        <section id="connect" >
+            <div class="card">
+                <div class="card-title text-center">
+                    <h2>GET IN TOUCH</h2>
+                </div>
+                <div class="services">
+                    <div class="current-status">
+                        {{user.services.status}}
+                    </div>
+                    <div class="current-services">
+                        <ul>
+                            <li ng-repeat="service in user.services.current track by $index"><i class="fa resume-color fa-check"></i>{{service}}</li>
+                        </ul>
+                    </div>
+                    <div class="drop-note">Drop me a line at <span class="resume-color">{{user.contactInfo.email}}</span> or call me at <span class="resume-color">{{user.contactInfo.mobile}}</span></div>
+                </div>
+            </div>
+        </section>
+    </div>
     <footer class="text-center"> @Copyright Mayank Tanwar Made with <i class=" red large fa fa-heart"></i> </footer>
 </div>
 
