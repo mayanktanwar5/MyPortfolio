@@ -42,7 +42,10 @@
  "images":["images/bhugol.png","images/bhugol1.png"],
  "showLink":"https://mayanktanwar5.github.io/Bhugol/",
 "focus":"Front End",
- "highlights":["Responsive web design","HTML5 and CSS3"]
+ "highlights":["Responsive web design","HTML5 and CSS3"],
+ "objective":"To develope a responsive web page using HTML5 and CSS3",
+  "challenges":["Designing the application and making choices what need to display at certain screen size"],
+   "learning":["Usage of CSS3 media queries","Extensively used bootstrap responsive grid feature"]
 }],
 "services":{"status":"Abara ka dabra Abara ka dabra Abara ka dabra Abara ka dabra",
             "current":["Do this do this do this","do that do that do that"]

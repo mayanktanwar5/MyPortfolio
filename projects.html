@@ -45,7 +45,40 @@
                             <h4 class="modal-title text-center">{{project.title}}</h4>
                         </div>
                         <div class="modal-body">
+                            <div class="project-show">
+                                <div uib-carousel  active="active" interval="myInterval" no-wrap="noWrapSlides">
+                                    <div class="img-container" uib-slide ng-repeat="slide in project.images track by $index "  index="$index">
+                                        <img  ng-src="{{slide}}" style="margin:auto;">
+                                        <!--<div  class="carousel-caption" ng-class="slide.class">-->
+                                        <!--<h3 class="carousel-header">Slide {{slide.header}}</h3>-->
+                                        <!--<p>{{slide.text}}</p>-->
+                                        <!--<button class="carousel-btn">{{slide.buttontext}}</button>-->
+                                        <!--</div>-->
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="project-obj  ">
+                                 <h4><i class="fa - fa-hand-o-right resume-color"></i>Objective</h4>
+                                 <p>{{project.objective}}</p>
+                            </div>
+                            <div class="project-challenges ">
+                                 <h4><i class="fa - fa-hand-o-right resume-color"></i>Challenges </h4>
+                                <ul>
+                                    <li ng-repeat="chal in project.challenges track by $index">
+
+                                        <span><i class="fa - fa-check resume-color"></i>{{chal}}</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="project-learning  ">
+                                 <h4><i class="fa - fa-hand-o-right resume-color"></i> Learning</h4>
+                                <ul>
+                                    <li ng-repeat="learn in project.learning track by $index">
+                                        <span><i class="fa - fa-check resume-color"></i>{{learn}}</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
