@@ -2,7 +2,7 @@
   "basicInfo":{
 
     "name":"Mayank Tanwar",
-    "jobTitle":"Full Stack Software developer",
+    "jobTitle":"Full Stack Software Developer",
     "jobDesc":["Proficient in full stack web devlopment",
       "Strong J2EE and MEAN stack experience","4.5 years of IT industry experience"]
   },
@@ -41,7 +41,7 @@
   ],
     "others":["DATA STRUCTURES","NODEJS","PYTHON","REACTJS","BOOTSTRAP","HTML5/CSS3","MicroServices(Docker)","AWS(EC2,S3)","MACHINE LEARNING"]},
   "projects":[{
-"title":"Bhugol",
+"title":"Bhugol Responsive web design",
 "skill":"HTML5, CSS3",
 "gitHubLink" :"https://github.com/mayanktanwar5/Bhugol",
  "images":["images/bhugol.png","images/bhugol1.png"],
@@ -53,7 +53,7 @@
    "learning":["Usage of CSS3 media queries","Extensively used bootstrap responsive grid feature"]
 },{
     "title":"Peer to Peer HomeStay Network",
-    "skill":"MEAN STACK ",
+    "skill":"MEAN,RabbitMQ,Docker,S3",
     "gitHubLink" :"https://github.com/mayanktanwar5/Airbnb_MarketPlace_Protoype",
     "images":["images/airbnb1.png","images/airbnb2.png","images/airbnb3.png","images/airbnb4.png","images/airbnb5.png","images/airbnb6.png","images/airbnb7.png","images/airbnb8.png"],
     "showLink":"",
@@ -66,26 +66,69 @@
                   "We move to AWS S3 to improve system performance to store videos and images as performance was hit while storing in MongoDb",
                   "Storing the user activities like his page visits, duration of stay on that page and displaying that information in graphical tree structure",
                   "Keeping the application secure using RBAC, Authorization, Authentication, brute force attacks and  parallel brute force attacks",
-                   "Writing the dynamic pricing algoirthm for our web application",
+                   "Writing the dynamic pricing algorithm for our web application",
                   "Design the system in a responsive way so that it can be migrated to ionic Mobile application"],
     "learning":["The System has taught us in great detail on how the Enterprise solutions should be architectured in order to create a large scalable and maintainable web application.",
+                "How to effectively use the frontend framework like AngularJs creating services, directives and controllers",
                 "We learned the TDD and how effectively it enhance the developement",
                 "Achieving Scalability using AMQP protocol via RabbitMQ ",
                 "We make our web application even quicker by caching and sharing the resources from in memory cache REDIS",
+                "Implementation of oAuth using PassportJS",
                 "Full stack development of the application"]
   },
     {
-      "title":"Bhugol",
-      "skill":"HTML5, CSS3",
-      "gitHubLink" :"https://github.com/mayanktanwar5/Bhugol",
-      "images":["images/bhugol.png","images/bhugol1.png"],
-      "showLink":"https://mayanktanwar5.github.io/Bhugol/",
+      "title":"Online MarketPlace Prototype",
+      "skill":"MEAN STACK",
+      "gitHubLink" :"https://github.com/mayanktanwar5/Ebay_MarketPlace_Prototype",
+      "images":["images/ebay1.png","images/ebay2.png","images/ebay7.png","images/ebay4.png","images/ebay8.png","images/ebay12.png"],
+      "showLink":"",
       "focus":"Front End",
-      "highlights":["Responsive web design","HTML5 and CSS3"],
-      "objective":"To develope a responsive web page using HTML5 and CSS3",
-      "challenges":["Designing the application and making choices what need to display at certain screen size"],
-      "learning":["Usage of CSS3 media queries","Extensively used bootstrap responsive grid feature"]
-    }],
+      "highlights":[],
+      "objective":"Understand the architecture of RESTFUL web services, implementation of MEAN STACK technology and  analyze performance of REST vs SOAP by creating a online market place similar to eBay with selling, biding and buying features that allows users to post their advertisements or items to sell it or put that for auction",
+      "challenges":["Developing the application in 3 version with different technologies to understand how system performance is enhanced or hampered with that technology",
+                    "Creating a single signon for user using passportJs",
+                    "Logging the user activity",
+                    "Proper Authentication and Authorization of the user"],
+      "learning":["Full Stack Development across 3 version of the application",
+                  "Learned MEAN STACK development and SOAP web services development using JAVA",
+                  "Performance and Load testing using Jmeter",
+                  "Performance improvement with implementation of connection pooling",
+                  "Unit testing using MOCHA"]
+    },
+    {
+      "title":"Break The Code, Multiplayer game",
+      "skill":"JAVA, DOCKER, AWS",
+      "gitHubLink" :"https://github.com/mayanktanwar5/BreakTheCode",
+      "images":["images/btc1.png","images/btc2.png","images/btc3.png","images/btc4.png","images/btc5.png"],
+      "showLink":"",
+      "focus":"Front End",
+      "highlights":[],
+      "objective":"Learning Object Oriented Principles using design patterns in a multiplayer game application",
+      "challenges":["Designing the system to use Object oriented principles",
+        "Using design patterns to handle the state of players",
+        "Simplifying cryptographic concept using an interactive game"
+          ],
+      "learning":["Learning various design patterns like Singleton, State, Observer, Chain of responsibility, Strategic",
+                  "Understanding Cryptographic concepts",
+                  "Building the application in DOCKER conatiner and Deployement on AWS "]
+    },
+    {
+      "title":"FoodCoin, Restaurant waste manager",
+      "skill":"Machine Learning",
+      "gitHubLink" :"https://github.com/mayanktanwar5/FoodCoin",
+      "images":["images/foodcoin10.png","images/foodcoin11.png","images/foodcoin12.png","images/foodcoin1.png","images/foodcoin2.png","images/foodcoin3.png","images/foodcoin4.png","images/foodcoin5.png","images/foodcoin6.png"],
+      "showLink":"",
+      "focus":"Front End",
+      "highlights":[],
+      "objective":"Apply your learning of enterprise software platforms and identify and solve a real world problem by developing a SAAS application, We picked up the excessive food wastage at the restaurants and come up with a solution using Machine learning to mitigate the food wastage problem",
+      "challenges":["Analysing the current system in restaurants and identifying the cause such as Improper use of inventory, incorrect estimations of customers, inappropriate utilization of prepared food ",
+        "Preparing the right data sets for our machine learning algorithm"],
+      "learning":["Creating a web application using Python Flask which deals with all the machine learning libraries and MEAN stack for fron end server",
+        "Building the application in docker container and deployment on IBM BLUEMIX cloud",
+        "Use of machine learning libraries like IBM Alchemy for semantics analytics and IBM Watson Machine learning library for predictive analytics of the customer",
+        "Using Twilio push notification service to inform customer"]
+    }
+      ],
 "services":{"status":"Abara ka dabra Abara ka dabra Abara ka dabra Abara ka dabra",
             "current":["Do this do this do this","do that do that do that"]
             },
