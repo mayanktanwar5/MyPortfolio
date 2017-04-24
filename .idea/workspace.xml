@@ -26,8 +26,8 @@
       <file leaf-file-name="resume.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resume.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="122" column="15" lean-forward="false" selection-start-line="122" selection-start-column="15" selection-end-line="122" selection-end-column="15" />
+            <state relative-caret-position="370">
+              <caret line="132" column="63" lean-forward="false" selection-start-line="132" selection-start-column="63" selection-end-line="132" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -281,12 +281,12 @@
       <workItem from="1492496077391" duration="3879000" />
       <workItem from="1492538556647" duration="63392000" />
       <workItem from="1492927003638" duration="6597000" />
-      <workItem from="1492993039398" duration="20555000" />
+      <workItem from="1492993039398" duration="20985000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136387000" />
+    <option name="totallyTimeSpent" value="136817000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -644,8 +644,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resume.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="122" column="15" lean-forward="false" selection-start-line="122" selection-start-column="15" selection-end-line="122" selection-end-column="15" />
+        <state relative-caret-position="370">
+          <caret line="132" column="63" lean-forward="false" selection-start-line="132" selection-start-column="63" selection-end-line="132" selection-end-column="63" />
           <folding />
         </state>
       </provider>
