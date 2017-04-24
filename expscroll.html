@@ -4,10 +4,10 @@
             <img ng-src="{{exp.image}}" alt="Picture">
         </div> <!-- cd-timeline-img -->
         <div    class="cd-timeline-content">
-            <h2 class="color-resume float-left">{{exp.companyName}}</h2>
-                  <span class="location-marker"><i class="fa fa-map-marker"></i>{{exp.jobLocation}}</span>
-                <h2 class="color-resume float-right">{{exp.location}}</h2>
-            <h2>{{exp.jobTitle}}</h2>
+            <h3 class="job-title">{{exp.jobTitle}}</h3>
+            <div class="company-name">{{exp.companyName}} <span class=" hidden-xs location-marker"><i class="fa fa-map-marker"></i>{{exp.jobLocation}}</span></div>
+
+
             <ul class="jobDesc">
                 <li ng-repeat="desc in exp.jobDesc" >{{desc}}</li>
             </ul>

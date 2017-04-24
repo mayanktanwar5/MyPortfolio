@@ -72,9 +72,16 @@ a:hover
     text-decoration: none;
     pointer: cursor;
     color:white;
-    letter-spacing: 1px;
+    /*letter-spacing: 1px;*/
 }
 
+.company-name
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 300;
+}
 
 .custom-btn
 {
@@ -287,7 +294,13 @@ p
     /*position: relative;*/
     /*margin-bottom:50px;*/
     /*padding: 20px;*/
-    /*overflow: hidden;*/
+    overflow: hidden;
+}
+
+.wrapper
+{
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .edu
 .experiences
@@ -306,7 +319,6 @@ p
 
 .cd-container {
     /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-    width: 90%;
     max-width: 1170px;
     margin: 0 auto;
 }
@@ -484,6 +496,7 @@ p
     border-radius: 0.25em;
     padding: 1em;
     box-shadow: 0 3px 0 #d7e4ed;
+    border: 1px solid #eee;
 }
 .cd-timeline-content:after {
     content: "";
@@ -720,8 +733,10 @@ p
 
 .card-title
 {
-    letter-spacing: 2px;
-    color:white;
+    margin-top: 0;
+    margin-bottom: 45px;
+    font-size: 24px;
+    text-align: center;
 }
 
 #skill1
@@ -756,8 +771,23 @@ p
 {
     height:320px;
     border-radius: 2px;
-   background-color: rgba(32,178,170,0.6);
+   /*background-color: rgba(32,178,170,0.6);*/
     margin-bottom: 20px;
+    overflow: hidden;
+    background: #009688;
+    color: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 }
 .img-container
 {
@@ -779,18 +809,22 @@ p
 }
 .project-content
 {
-    padding: 15px;
-    color:white;
-    letter-spacing: 1px;
+    padding: 30px;
+    padding-bottom: 75px;
+    position: relative;
+
 }
 .project-title
 {
-    font-size: 15px;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 
 .project-tech
 {
-    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
 }
 .view-options
 {
@@ -800,9 +834,11 @@ p
 
 .project-btn
 {
-    border-radius: 2px;
-    border: 2px solid white;
-    background-color: rgba(255,255,255,0.2);
+    /*border-radius: 2px;*/
+    /*border: 2px solid white;*/
+    /*background-color: rgba(255,255,255,0.2);*/
+    color:#fff;
+    cursor:pointer;
 }
 
 .filter-animate.ng-enter
@@ -844,30 +880,39 @@ p
 }
 
 .margin-list {
-
-    margin-top: 20px;
-    border-bottom:1px solid white;
-    color:white;
+    list-style: none;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    text-align: center;
+    border-bottom: 1px solid #e8e8e8;
 }
 
 .margin-list li{
 
-    padding: 5px;
+    margin-right: 30px;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 15px;
+    color: #8a8a8a;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 .margin-list a
 {
-    color:rgba(255,255,255,0.8);
+    color:inherit;
 }
 
 .activeSkill
 {
-    color: #238982;
-    border-bottom: 2px solid #238982;
+    color: #009688;
+    border-bottom: 2px solid #009688;
 }
 .activeSkill a
 {
-    color: #238982;
-    text-decoration: none;
+    color: #009688;
+    /*border-bottom: 2px solid #009688;*/
 }
 .red
 {
@@ -952,65 +997,79 @@ a.active {
 
 .jobDesc
 {
-    font-size: 10px;
+    color: #666;
+    padding-top:5px ;
 }
 
 .location-marker
 {
-    font-size: 11px;
-    color:grey;
-    position: absolute;
-    float: right;
-    right: 10px;
-    top: 40px;
+    /*font-size: 11px;*/
+    /*color:grey;*/
+    /*position: absolute;*/
+    /*float: right;*/
+    /*right: 10px;*/
+    /*top: 40px;*/
+    /*position: absolute;*/
+    right: 5px;
+    top: 22px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+.location-marker .fa
+{
+    margin-right: 5px;
 }
 
 .cd-date
 {
-    font-size: 15px;
-    color:white;
-    letter-spacing: 2px;
-    font-weight: bolder;
+    /*font-size: 15px;*/
+    color: #8a8a8a;
+    /*letter-spacing: 2px;*/
+    /*font-weight: bolder;*/
 }
 .skill-container
 {
 
 }
-
-.sub-skill ,.skill-name
+.sub-skill
 {
-    padding:10px;
+    margin-bottom: 60px;
 }
+/*.sub-skill ,.skill-name*/
+/*{*/
+    /*padding:10px;*/
+/*}*/
 
-.skill-name
-{
-    font-size: 15px;
-}
+/*.skill-name*/
+/*{*/
+    /*font-size: 15px;*/
+/*}*/
 
 .skill-proficient
 {
-    color:grey;
-    font-size: 12px;
+    color: #8a8a8a;
+    margin-bottom: 15px;
 }
 
 .skill-container
 {
-    padding: 15px;
+    margin-bottom: 45px;
 }
 
 .skill-btn
 {
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
     padding: 6px 30px;
     display: inline-block;
     margin-right: 10px;
-    border: 2px solid #68c3a3;
+    border: 1px solid #f5f5f5;
     font-weight: 500;
     margin-bottom: 15px;
     font-size: 16px;
-    background-color: #68c3a3;
-    color:white;
-    letter-spacing: 1px ;
 }
 
 .load-page
@@ -1018,47 +1077,51 @@ a.active {
     background: url("images/turntable.jpg")  no-repeat center;
     background-size:cover ;
     background-attachment:fixed ;
-
 }
 
-#exp
-{
-    background: url("images/phone.jpg")  no-repeat center;
-    background-size:cover ;
-    background-attachment:fixed ;
+/*#exp*/
+/*{*/
+    /*background: url("images/phone.jpg")  no-repeat center;*/
+    /*background-size:cover ;*/
+    /*background-attachment:fixed ;*/
 
-    padding: 10px;
-}
+    /*padding: 10px;*/
+/*}*/
 
-#skills
-{
-    background: url("images/pencil.jpg")  no-repeat center;
-    background-size:cover ;
-    background-attachment:fixed ;
-    /*background-color: #1a1e23;;*/
-    padding: 10px;
-    color:white;
-}
-#port
-{
-    background: url("images/hands.jpg")  no-repeat center;
-    background-size:cover ;
-    background-attachment:fixed ;
-    padding: 10px;
-}
+/*#skills*/
+/*{*/
+    /*background: url("images/pencil.jpg")  no-repeat center;*/
+    /*background-size:cover ;*/
+    /*background-attachment:fixed ;*/
+    /*!*background-color: #1a1e23;;*!*/
+    /*padding: 10px;*/
+    /*color:white;*/
+/*}*/
+/*#port*/
+/*{*/
+    /*background: url("images/hands.jpg")  no-repeat center;*/
+    /*background-size:cover ;*/
+    /*background-attachment:fixed ;*/
+    /*padding: 10px;*/
+/*}*/
 
-#connect
-{
-    background: url("images/coffee.jpg")  no-repeat center;
-    background-size:cover ;
-    background-attachment:fixed ;
-    padding: 10px;
-}
+/*#connect*/
+/*{*/
+    /*background: url("images/coffee.jpg")  no-repeat center;*/
+    /*background-size:cover ;*/
+    /*background-attachment:fixed ;*/
+    /*padding: 10px;*/
+/*}*/
 
 .services{
-    color:white;
-    width:70%;
-    margin:0 auto;
+    /*color:white;*/
+    /*width:70%;*/
+    /*margin:0 auto;*/
+    position: relative;
+    padding: 30px;
+    padding-left: 190px;
+    font-size: 16px;
+    color: #666;
 }
 
 .current-services ul{
@@ -1074,25 +1137,36 @@ color:#68c3a3;
 
 .current-status
 {
-    padding: 15px;
+    margin-bottom: 15px;
 }
 .current-services
 {
-    padding: 10px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+.current-services ul li{
+    margin-bottom: 15px;
+}
+.current-serivces .fa
+{
+    color:#009688;
 }
 
+.services p{
+    margin-bottom: 15px;
+}
 .drop-note
 {
 
 }
 
-#edu
-{
-    background: url("images/graduation.jpg")  no-repeat center;
-    background-size:cover ;
-    background-attachment:fixed ;
-    padding: 10px;
-}
+/*#edu*/
+/*{*/
+    /*background: url("images/graduation.jpg")  no-repeat center;*/
+    /*background-size:cover ;*/
+    /*background-attachment:fixed ;*/
+    /*padding: 10px;*/
+/*}*/
 
 
 .edu-card
@@ -1155,4 +1229,20 @@ color:#68c3a3;
 {
     padding-bottom: 20px;
 }
+.job-title
+{
+    font-size: 22px;
+    font-weight: 300;
+    color: #009688;
+    margin-bottom: 0;
+    margin-top:0;
+}
 
+.subtitle
+{
+    font-size: 18px;
+    color: #8a8a8a;
+    margin-top: 0;
+    margin-bottom: 45px;
+    font-weight: 300;
+}

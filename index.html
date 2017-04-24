@@ -24,9 +24,7 @@
     <div class="wrapper container">
         <section id="edu" class="  experiences" >
             <div class="card">
-                <div class="card-title text-center">
-                    <h2>Education</h2>
-                </div>
+                    <h2 class ="card-title">Education</h2>
                 <div class="edu-card col-md-4 col-xs-12  " ng-repeat="edu in user.education" >
                     <div class="edu-inner">
                         <div class="degree"> <h3>{{edu.degree}}</h3></div>
@@ -39,40 +37,33 @@
         </section>
         <section id="exp" class="  experiences">
             <div class="card">
-                <div class="card-title text-center">
-                    <h2> Work Experiences</h2>
-                </div>
+                    <h2 class="card-title"> Work Experiences</h2>
                 <mt-exp-scroll experiences="user.experiences"></mt-exp-scroll>
             </div>
         </section>
         <section id="skills" >
             <div class="card">
-                <div class="card-title text-center">
-                    <h2>Professional Skills</h2>
-                </div>
+                    <h2 class="card-title">Professional Skills</h2>
                 <div class="sub-skill text-center col-md-12">
-                    <h4> Top Skill </h4>
-                </div>
+                    <h3 class="subtitle"> Top Skill </h3>
                 <mt-skill-show skills="user.skills"></mt-skill-show>
+                </div>
             </div>
         </section>
         <section id="port" >
             <div class="card">
-                <div class="card-title text-center">
-                    <h2>Portfolio</h2>
-                </div>
+                    <h2 class="card-title">Portfolio</h2>
                 <mt-project-show projects="user.projects"></mt-project-show>
             </div>
         </section>
         <section id="connect" >
             <div class="card">
-                <div class="card-title text-center">
-                    <h2>GET IN TOUCH</h2>
-                </div>
+                    <h2 class="card-title">GET IN TOUCH</h2>
                 <div class="services">
                     <div class="current-status">
                         {{user.services.status}}
                     </div>
+                    <p><strong>I can help with the following:</strong></p>
                     <div class="current-services">
                         <ul>
                             <li ng-repeat="service in user.services.current track by $index"><i class="fa resume-color fa-check"></i>{{service}}</li>
