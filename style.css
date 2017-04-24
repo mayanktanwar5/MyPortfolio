@@ -185,6 +185,7 @@ a:hover
     margin: 0 auto;
 }
 
+
 p
 {
     line-height: 1.5;
@@ -234,7 +235,6 @@ p
 
 .nav-header li a
 {
-    color: rgba(255, 255, 255, 0.6);
     padding: inherit;
 }
 
@@ -246,7 +246,6 @@ p
 }
 .fixed-header
 {
-
     background: #004a43;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -769,7 +768,7 @@ p
 }
 .card-project
 {
-    height:320px;
+    height:350px;
     border-radius: 2px;
    /*background-color: rgba(32,178,170,0.6);*/
     margin-bottom: 20px;
@@ -828,6 +827,8 @@ p
 }
 .view-options
 {
+    /*position: absolute;*/
+    /*bottom:0;*/
     padding-bottom: 15px;
     padding-top: 10px;
 }

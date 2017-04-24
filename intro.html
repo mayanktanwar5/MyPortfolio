@@ -11,8 +11,8 @@
         {{details.jobTitle}}
     </div>
     <div class="cover">
-        <p>
-            {{details.jobDesc}}
+        <p ng-repeat="desc in details.jobDesc track by $index">
+            {{desc}}
         </p>
     </div>
 </div>

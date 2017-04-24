@@ -2,13 +2,14 @@
   "basicInfo":{
 
     "name":"Mayank Tanwar",
-    "jobTitle":"Full Stack Web developer",
-    "jobDesc":"I am full stack web developer"
+    "jobTitle":"Full Stack Software developer",
+    "jobDesc":["Proficient in full stack web devlopment",
+      "Strong J2EE and MEAN stack experience","4.5 years of IT industry experience"]
   },
   "contactInfo" :{
     "email":"mayank.tanwar@sjsu.edu",
     "mobile":"+1-669-265-5136",
-    "portfolio":"xyz.com"
+    "portfolio":"https://mayanktanwar5.github.io/MyPortfolio/"
   },
   "experiences" :[
 
@@ -23,9 +24,11 @@
       "jobDuration" :" Jan 2012 - June 2016",
       "image":"images/cts.png"
     },
-    {"companyName":"eCampus San Jose State Univeristy",
+    {"companyName":"eCampus SJSU",
       "jobDesc":[
-        "Canvas support to professor"
+        "Support for sjsu canvas website",
+        "Revamping sjsu canvas course modules"
+
       ],
       "jobLocation":"San Jose, California",
       "jobTitle" :"Student Assistant",
@@ -33,8 +36,10 @@
       "image":"images/sjsu.png"
     }
   ],
-  "skills":{"primary":[{"name":"JavaScript","proficient":"Advance , 4 Years","perc":"70"},{"name":"Java","proficient":"25","perc":"80"}],
-    "others":["HTML5","BOOTSTRAP","HTML5","BOOTSTRAP","HTML5","BOOTSTRAP","HTML5","BOOTSTRAP","HTML5","BOOTSTRAP","HTML5","BOOTSTRAP"]},
+  "skills":{"primary":[{"name":"JavaScript","proficient":"Advance, 3 Years","perc":"85"},{"name":"Java","proficient":"Advance, 4 Years","perc":"92"},
+    {"name":"AngularJs","proficient":"Advance, 2 Years","perc":"80"},{"name":"DBMS(Oracle,MongoDb,Redis)","proficient":"Advance, 3 Years","perc":"88"}
+  ],
+    "others":["DATA STRUCTURES","NODEJS","PYTHON","REACTJS","BOOTSTRAP","HTML5/CSS3","MicroServices(Docker)","AWS(EC2,S3)","MACHINE LEARNING"]},
   "projects":[{
 "title":"Bhugol",
 "skill":"HTML5, CSS3",
@@ -46,11 +51,49 @@
  "objective":"To develope a responsive web page using HTML5 and CSS3",
   "challenges":["Designing the application and making choices what need to display at certain screen size"],
    "learning":["Usage of CSS3 media queries","Extensively used bootstrap responsive grid feature"]
-}],
+},{
+    "title":"Peer to Peer HomeStay Network",
+    "skill":"MEAN STACK ",
+    "gitHubLink" :"https://github.com/mayanktanwar5/Airbnb_MarketPlace_Protoype",
+    "images":["images/airbnb1.png","images/airbnb2.png","images/airbnb3.png","images/airbnb4.png","images/airbnb5.png","images/airbnb6.png","images/airbnb7.png","images/airbnb8.png"],
+    "showLink":"",
+    "focus":"Front End",
+    "highlights":["Distributed and Scalable web application"],
+    "objective":"To develope a secure scalable and distributed peer to peer home Network similar to Airbnb, where the user can either host other people by renting his property for a short period of time or the user can be a guest if he books property hosted by other user. The user can make payment, view the listings on map and provide reviews for other properties and people",
+    "challenges":["Developing a Single Page Application which can be scalable and persistent with data in between views",
+                  "Design of system was important, as we need to decide which data need to be store in MySQl or which in MongoDb ",
+                  "Implementation of connection pooling from scratch i.e without using Db provided inbuilt pool",
+                  "We move to AWS S3 to improve system performance to store videos and images as performance was hit while storing in MongoDb",
+                  "Storing the user activities like his page visits, duration of stay on that page and displaying that information in graphical tree structure",
+                  "Keeping the application secure using RBAC, Authorization, Authentication, brute force attacks and  parallel brute force attacks",
+                   "Writing the dynamic pricing algoirthm for our web application",
+                  "Design the system in a responsive way so that it can be migrated to ionic Mobile application"],
+    "learning":["The System has taught us in great detail on how the Enterprise solutions should be architectured in order to create a large scalable and maintainable web application.",
+                "We learned the TDD and how effectively it enhance the developement",
+                "Achieving Scalability using AMQP protocol via RabbitMQ ",
+                "We make our web application even quicker by caching and sharing the resources from in memory cache REDIS",
+                "Full stack development of the application"]
+  },
+    {
+      "title":"Bhugol",
+      "skill":"HTML5, CSS3",
+      "gitHubLink" :"https://github.com/mayanktanwar5/Bhugol",
+      "images":["images/bhugol.png","images/bhugol1.png"],
+      "showLink":"https://mayanktanwar5.github.io/Bhugol/",
+      "focus":"Front End",
+      "highlights":["Responsive web design","HTML5 and CSS3"],
+      "objective":"To develope a responsive web page using HTML5 and CSS3",
+      "challenges":["Designing the application and making choices what need to display at certain screen size"],
+      "learning":["Usage of CSS3 media queries","Extensively used bootstrap responsive grid feature"]
+    }],
 "services":{"status":"Abara ka dabra Abara ka dabra Abara ka dabra Abara ka dabra",
             "current":["Do this do this do this","do that do that do that"]
             },
  "education":[{"degree":"Masters, Computer Software Engineering","institute":"San Jose State University",
-   "duration":"August 2016 - May 2018","desc":"Helo asdasdasdsadsadsadsadsadsasad"},{"degree":"Masters, Computer Software Engineering","institute":"San Jose State University",
-   "duration":"August 2016 - May 2018","desc":"Helo asdasdasdsadsadsadsadsadsasad"}]
+   "duration":"August 2016 - May 2018","desc":"Doing my specialization in Enterprise Software Techniques,Took courses such as Enterprise Distributed Systems, Enterprise Software Platforms, Software Systems Platforms, Enterprise App Development, Cloud Technologies and Web UI Design. All these courses helped me to follow my passion for web app development and cloud computing "}
+ ,{"degree":"Bachelors, Computer Science","institute":"Guru Gobind Singh IndraPrastha Univeristy, Delhi",
+   "duration":"August 2007 - May 2011","desc":"Completed my bachelor's degree from the prestigious GGSIPU, Delhi. Where my focus of interest was on domains such as Data Structures and Algorithms, Distributed Systems, Operating Systems and Database Management Systems"},
+   {"degree":"Higher Secondary School","institute":"Silver Bells Public School",
+     "duration":"March 2005 - March 2007","desc":"This is the place hwere I have honed my skills and start working for my passion to be a software engineer"}]
+
 }
